@@ -1,0 +1,260 @@
+
+       body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffcc00;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin: 0;
+        color: white;
+         
+         
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            position: absolute; /* Mengatur posisi absolut */
+            right: 20px; /* Jarak dari kanan */
+            top: 10px;   /* Jarak dari atas */
+        }
+
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 4px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        /* Styles for 'X' transformation */
+        .hamburger.active .line1 {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active .line2 {
+            opacity: 0;
+        }
+
+        .hamburger.active .line3 {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        /* Main Content */
+        #hero {
+            text-align: center;
+            margin: 20px;
+        }
+
+        #hero img {
+            width: 500px;
+            max-width: 500px;
+            border: 1px solid;
+            border-radius: 5px;
+        }
+
+        #hero h2 {
+            font-size: 2em;
+            margin-top: 10px;
+        }
+
+        #hero p {
+            font-size: 1.2em;
+        }
+        
+       #hero h3 {
+          font-size: 25px;
+          font-family: 'Lobster', cursive;
+          margin-top: 40px;
+          margin-bottom: 40px;
+          color: #333;
+        }
+
+        #dialogue {
+            margin: 20px;
+            padding: 20px;
+            background-color: #e0f7fa;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .character-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        #links {
+            background-color: #ffcc00;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #links h2 {
+            font-size: 2em;
+            font-family: 'Lobster', cursive;
+        }
+        .icon {
+            font-size: 45px;
+            margin: 10px;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+        .icon:hover {
+            transform: scale(1.1);
+        }
+        /* Warna logo sesuai dengan logo asli */
+        .telegram {
+            color: #0088cc; /* Warna resmi Telegram */
+        }
+        .telegram:hover {
+            color: #0077b5;
+        }
+        .x-twitter {
+            color: #1da1f2; /* Warna resmi X (Twitter) */
+        }
+        .x-twitter:hover {
+            color: #0d95e8;
+        }
+        
+        .youtube-icon {
+          color: #ff0000;
+        }
+
+  
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 15px;
+            font-family: 'Lobster', cursive;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #ffcc00;
+                text-align: center;
+                font-size: 15px;
+             font-family: 'Lobster', cursive;
+
+            }
+
+            nav a {
+                padding: 15px;
+                border-top: 1px solid white;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            #hero img {
+                width: 100%;
+            }
+
+            #dialogue {
+                font-size: 1em; /* Adjust font size for smaller screens */
+            }
+
+            #links h2 {
+                font-size: 1.5em;
+            }
+
+            .link-icons img {
+                width: 40px;
+            }
+        }
+
+        /* Menu Active */
+        .nav-active {
+            display: flex !important;
+        }
+        
+/* Visi dan Misi Styles */
+    #vision-mission {
+        margin: 20px;
+        padding: 30px;
+        background-color: #f9f9f9; /* Latar belakang lebih cerah */
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bayangan untuk kedalaman */
+        text-align: center;
+    }
+
+    .vision-mission-container {
+        max-width: 600px; /* Lebar maksimum kontainer */
+        margin: auto; /* Pusatkan kontainer */
+    }
+
+    .vision-mission-img {
+        width: 100%;
+        max-width: 100%; /* Gambar responsif */
+        height: auto; /* Menjaga rasio aspek gambar */
+        border-radius: 15px; /* Sudut melengkung */
+        margin: 20px 0; /* Jarak atas dan bawah gambar */
+    }
+
+    .vision-mission-text {
+        font-size: 1.1em; /* Ukuran font sedikit lebih kecil */
+        margin-top: 10px;
+        line-height: 1.6; /* Jarak antar baris */
+        color: #555; /* Warna teks lebih gelap untuk kontras */
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        #vision-mission {
+            padding: 20px; /* Kurangi padding pada layar kecil */
+        }
+
+        .vision-mission-text {
+            font-size: 1em; /* Ukuran font lebih kecil di layar kecil */
+        }
+    }        
